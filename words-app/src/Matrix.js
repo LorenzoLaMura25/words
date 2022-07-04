@@ -1,4 +1,4 @@
-
+import Mywords from './Data.json'
 
 export const boardDefault = [
   ["", "", "", "", ""],
@@ -10,6 +10,8 @@ export const boardDefault = [
 
   
 ];
+
+
 
 //sarà la mia tabella di default ed 
 // è un array costituito da 6 araay ognuno di 5 lettere ciascuno
