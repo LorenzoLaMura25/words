@@ -6,6 +6,16 @@
   color: white;
 }
 
+
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
 body {
   padding: 0%;
   margin: 0;
@@ -25,8 +35,8 @@ nav {
 
 
 .board {
-  width: 380px;
-  height: 380px;
+  width: 450px;
+  height: 550px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
