@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #121212;
+ 
   width: 100vw;
   height: 100vh;
   color: white;
@@ -9,6 +9,7 @@
 body {
   padding: 0%;
   margin: 0;
+  background-image:linear-gradient(to right,black,#434343);
 }
 
 nav {
@@ -24,11 +25,12 @@ nav {
 
 
 .board {
-  width: 450px;
-  height: 550px;
+  width: 380px;
+  height: 380px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  
 }
 
 .row {
@@ -69,23 +71,23 @@ nav {
   margin-top: 60px;
 }
 
-.line1 {
-  flex: 33%;
+.linea1 {
+  flex: 30%;
   display: flex;
   flex-direction: row;
   display: flex;
   justify-content: center;
   margin: 5px;
 }
-.line2 {
-  flex: 33%;
+.linea2 {
+  flex: 30%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 5px;
 }
-.line3 {
-  flex: 33%;
+.linea3 {
+  flex: 30%;
   display: flex;
   flex-direction: row;
   justify-content: center;

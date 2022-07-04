@@ -6,7 +6,8 @@ export const boardDefault = [
   ["", "", "", "", ""],
   ["", "", "", "", ""],
   ["", "", "", "", ""],
-  ["", "", "", "", "A"],
+
+  
 ];
 
 //sarà la mia tabella di default ed 

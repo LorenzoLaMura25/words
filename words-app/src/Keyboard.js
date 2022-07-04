@@ -1,22 +1,27 @@
 import React from 'react'
+import Key from './Key';
 
 const Keyboard = () => {
 
-    const keyb1= ["Q","W","E","R","T","Y","U","I","O","P"]
-    const keyb2 =["A","S","D","F","G","H","J","K","L"]
-    const keyb3 =["Z","X","C","V","B","N","M"]
+    const keys1= ["Q","W","E","R","T","Y","U","I","O","P"]
+    const keys2 =["A","S","D","F","G","H","J","K","L"]
+    const keys3 =["Z","X","C","V","B","N","M"]
   return (
     <div className="Keyboard">
         <div className="linea1">
-         <div>{keyb1}</div>
+            {keys1.map((key)=>{
+            return <Key keyval={key}/>;
+            })}
         </div>
         <div className="linea2">
-            <div>{keyb2}</div>
-            
+            {keys2.map((key)=>{
+                 return <Key keyval={key}/>;
+            })}
         </div>
         <div className="linea3">
-         <div>{keyb3}</div>
-            
+            {keys3.map((key)=>{
+                 return <Key keyval={key}/>;
+            })}
         </div>
     </div>
   )
