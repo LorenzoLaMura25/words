@@ -8,6 +8,13 @@ import React from 'react'
 // ad esempio parola ["p","a","r","o","l","a"]
 //5 tentativi. una matrice  
 
+
+
+//essendo un array fa da 5 lettere vanno da 0 a 4 
+//le posizioni vanno da 0 a 4 
+//LetterpOS è 0 perchè è la prima lettera
+//attemptvalue è il numro di tentativi
+
 const Board = () => {
    
 
@@ -50,6 +57,15 @@ const Board = () => {
             <Letter letterPos={3} attemptValue={4}/>
             <Letter letterPos={4} attemptValue={4}/>
         </div>
+
+        <div className="row">
+            <Letter letterPos={0} attemptValue={5}/>
+            <Letter letterPos={1} attemptValue={5}/>
+            <Letter letterPos={2} attemptValue={5}/>
+            <Letter letterPos={3} attemptValue={5}/>
+            <Letter letterPos={4} attemptValue={5}/>
+        </div>
+    
     
     </div>
   )
@@ -58,8 +74,4 @@ const Board = () => {
 export default Board
 
 
-//essendo un array fa da 5 lettere vanno da 0 a 4 
-//le posizioni vanno da 0 a 4 
-//LetterpOS è 0 perchè è la prima lettera
-//attemptvalue è il numro di tentativi
 
