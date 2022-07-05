@@ -2,6 +2,10 @@ import React,{useContext}from 'react';
 
 import {AppContext} from './App';
 
+//serve per capire se la lettera è corretta ed è nella posizione giusta,
+//se è giusta ma nella posizione sbagliata,
+// e se è errrata
+
 function Letter ({letterPos,attemptValue}) {
   const {board,correctWord,currentAttempt} = useContext(AppContext);
   const letter = board[attemptValue][letterPos];
