@@ -1,16 +1,29 @@
 import React,{useContext} from 'react'
-import {AppContext} from './App'
+import {AppContext } from './App'
+
+
 
 
 
 function Key({keyval,otherkey}) {
-    const {board,setBoard,currentAttempt,setCurrentAttempt} = useContext(AppContext);
+
+
+    const {board,setBoard,currentAttempt,setCurrentAttempt,correctWord} = useContext(AppContext);
 
 
     const selectLetter = ()=>{
         if(keyval === "ENTER"){
             if (currentAttempt.letterPos !== 5) return;
             setCurrentAttempt({attempt:currentAttempt.attempt +1,letterPos:0})
+
+            let currentWord = "";
+            for (let i = 0;i<5;i++){
+                currentWord += board[currentAttempt.attempt][i]
+            }
+
+            if(currentWord === correctWord){
+                alert("GG You Guessed the correct Word")
+            }
 
             //funzionalità di enter:non funziona se non si completa la parola
             //attempt + 1 significa che non rimango sempre nella pos [0,0]
@@ -19,9 +32,9 @@ function Key({keyval,otherkey}) {
         else if(keyval === "DELETE"){
             if(currentAttempt.letterPos === 0) return;
             const newBoard = [...board]
-            newBoard[currentAttempt.attempt][currentAttempt.letterPos -1]= ""; //mi ritorna una stringa vuota
+            newBoard[currentAttempt.attempt][currentAttempt.letterPos -1]= ""; //mi ritorna una stringa
             setBoard(newBoard)
-            setCurrentAttempt({...currentAttempt,letterPos: currentAttempt.letterPos -1})
+            setCurrentAttempt({...currentAttempt,letterPos: currentAttempt.letterPos -1}) // ritorna alla posizione precedente
 
         }
         else{

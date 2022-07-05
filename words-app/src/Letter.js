@@ -11,12 +11,16 @@ function Letter ({letterPos,attemptValue}) {
   const letter = board[attemptValue][letterPos];
 
 
-  const correct = correctWord[letterPos] === letter;
+  const correct = correctWord.toUpperCase()[letterPos] === letter; //se è uguale alla lettera dentro la cell
 
-  const almost = !correct && letter !== "" && correctWord.includes(letter);
+  const almost = !correct && letter !== "" && correctWord.includes(letter); //non dve essere corretta e la cell non deve essere vuota
+                                                                            //e la parola dve includere questa lettera
 
   const letterState = 
-  currentAttempt.attempt > attemptValue &&(correct ? "correct" : almost ? "almost": "error");
+  currentAttempt.attempt > attemptValue &&(correct ? "correct" : almost ? "almost": "error"); 
+
+  //se è corretta lettrstte viene settato a correct,se non è vero,dobbimo chiederci se almost è true
+  //allora letterState viene settato ad almost,altrimenti 
 
 
   return (

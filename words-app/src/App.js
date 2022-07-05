@@ -7,15 +7,12 @@ import { boardDefault} from './Matrix';
 
 export const AppContext = createContext();
 
+
 function App() {
   const[board,setBoard] = useState(boardDefault);
   const[currentAttempt,setCurrentAttempt] = useState({attempt:0,letterPos:0})
- 
-
   const correctWord = "RIGHT";
-
-
-
+  
   return (
     <div className="App">
       <nav>
