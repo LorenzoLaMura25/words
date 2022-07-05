@@ -1,4 +1,6 @@
-import Mywords from './Data.json'
+
+
+
 
 export const boardDefault = [
   ["", "", "", "", ""],
@@ -6,10 +8,11 @@ export const boardDefault = [
   ["", "", "", "", ""],
   ["", "", "", "", ""],
   ["", "", "", "", ""],
-  ["", "", "", "", ""],
+
 
   
 ];
+
 
 
 

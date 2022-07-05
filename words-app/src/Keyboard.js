@@ -5,8 +5,8 @@ const Keyboard = () => {
 
     const keys1= ["Q","W","E","R","T","Y","U","I","O","P"]
     const keys2 =["A","S","D","F","G","H","J","K","L"]
-    const keys3 =["Z","X","C","V","B","N","M"]
-    const keys4 = ["ENTER","DELETE"]
+    const keys3 =["ENTER","Z","X","C","V","B","N","M","DELETE"]
+   
   return (
     <div className="Keyboard">
         <div className="linea1">
@@ -25,11 +25,7 @@ const Keyboard = () => {
             })}
         </div>
 
-        <div className="linea3">
-            {keys4.map((key)=>{
-                 return <Key keyval={key}/>;
-            })}
-        </div>
+      
     </div>
   )
 }

@@ -13,6 +13,8 @@ function Letter ({letterPos,attemptValue}) {
 
   const letterState = 
   currentAttempt.attempt > attemptValue &&(correct ? "correct" : almost ? "almost": "error");
+
+
   return (
     <div className="letter" id={letterState}>
       {""}

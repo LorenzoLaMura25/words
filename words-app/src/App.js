@@ -3,15 +3,18 @@ import './App.css';
 import Board from './Board';
 import Keyboard from './Keyboard';
 import {createContext,useState} from 'react';
-import { boardDefault } from './Matrix';
+import { boardDefault} from './Matrix';
 
 export const AppContext = createContext();
 
 function App() {
   const[board,setBoard] = useState(boardDefault);
   const[currentAttempt,setCurrentAttempt] = useState({attempt:0,letterPos:0})
+ 
 
   const correctWord = "RIGHT";
+
+
 
   return (
     <div className="App">
